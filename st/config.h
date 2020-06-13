@@ -97,7 +97,7 @@ unsigned int tabspaces = 8;
 float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
-#include "/home/<USER>/.cache/wal/colors-wal-st.h"
+#include "/home/tajo48/.cache/wal/colors-wal-st.h"
 
 /*
  * Default colors (colorname index)
