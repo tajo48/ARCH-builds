@@ -54,7 +54,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *firefoxcmd[]  = { "firefox", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
-static const char *sscmd[]  = { "import", "/home/tajo48/screen.png", NULL };
+static const char *sscmd[]  = { "sh", "/home/tajo48/ARCH-files/ss.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 
