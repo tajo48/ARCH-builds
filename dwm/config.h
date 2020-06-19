@@ -54,6 +54,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *firefoxcmd[]  = { "firefox", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
+static const char *clipmenucmd[]  = { "clipmenu", NULL };
 static const char *sscmd[]  = { "sh", "/home/tajo48/ARCH-files/ss.sh", NULL };
 static const char *offcmd[]  = { "sh", "/home/tajo48/ARCH-files/off.sh", NULL };
 static const char *updatecmd[]  = { "sh", "/home/tajo48/ARCH-files/update.sh", NULL };
@@ -65,6 +66,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_q,      spawn,          {.v = firefoxcmd } },
+	{ MODKEY,                       XK_v,      spawn,          {.v = clipmenucmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = discordcmd } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = sscmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
