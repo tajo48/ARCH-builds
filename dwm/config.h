@@ -55,6 +55,8 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *firefoxcmd[]  = { "firefox", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 static const char *sscmd[]  = { "sh", "/home/tajo48/ARCH-files/ss.sh", NULL };
+static const char *offcmd[]  = { "sh", "/home/tajo48/ARCH-files/off.sh", NULL };
+static const char *updatecmd[]  = { "sh", "/home/tajo48/ARCH-files/update.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 
@@ -83,6 +85,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY|ShiftMask,             XK_u,      spawn,          {.v = updatecmd } },
 	{ MODKEY,                       XK_o,      setlayout,      {.v = &layouts[4]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
@@ -101,7 +104,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_p,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = offcmd } },
 };
 
 /* button definitions */
