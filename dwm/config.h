@@ -53,13 +53,14 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, NULL };
+/*static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, NULL }; */
 static const char *termcmd[]  = { "st", "-e", "tmux", NULL };
 static const char *firefoxcmd[]  = { "firefox", NULL };
 static const char *curacmd[]  = { "cura", NULL };
 static const char *blendercmd[]  = { "blender", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 static const char *clipmenucmd[]  = { "clipmenu", NULL };
+static const char *dmenucmd[]  = { "sh", "/home/tajo48/ARCH-files/dmenu.sh", NULL };
 static const char *sscmd[]  = { "sh", "/home/tajo48/ARCH-files/ss.sh", NULL };
 static const char *offcmd[]  = { "sh", "/home/tajo48/ARCH-files/off.sh", NULL };
 static const char *updatecmd[]  = { "sh", "/home/tajo48/ARCH-files/update.sh", NULL };
