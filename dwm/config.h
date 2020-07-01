@@ -62,7 +62,7 @@ static const char *discordcmd[]  = { "discord", NULL };
 static const char *clipmenucmd[]  = { "clipmenu", NULL };
 static const char *sscmd[]  = { "sh", "/home/tajo48/ARCH-files/ss.sh", NULL };
 static const char *offcmd[]  = { "sh", "/home/tajo48/ARCH-files/off.sh", NULL };
-static const char *updatecmd[]  = { "sh", "/home/tajo48/ARCH-files/update.sh", NULL };
+static const char *updatecmd[]  = { "sh", "/home/tajo48/ARCH-files/upgradefiles.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", "-e", "tmux", NULL };
 
