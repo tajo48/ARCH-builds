@@ -57,6 +57,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", "-e", "tmux", NULL };
 static const char *firefoxcmd[]  = { "firefox", NULL };
 static const char *curacmd[]  = { "cura", NULL };
+static const char *slockcmd[]  = { "slock", NULL };
 static const char *blendercmd[]  = { "blender", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 static const char *clipmenucmd[]  = { "clipmenu", NULL };
@@ -76,6 +77,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          {.v = blendercmd } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = curacmd } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = sscmd } },
+	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = slockcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
